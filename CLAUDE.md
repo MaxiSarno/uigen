@@ -65,7 +65,7 @@ Custom JWT auth (`src/lib/auth.ts`) using `jose`. Sessions stored in httpOnly co
 
 ### Persistence
 
-Prisma + SQLite (`prisma/dev.db`). Two models: `User` and `Project`. A `Project` stores `messages` (JSON string) and `data` (serialized VFS JSON string). Anonymous users have no `userId` on their project. The Prisma client is generated to `src/generated/prisma/`.
+Prisma + SQLite (`prisma/dev.db`). Two models: `User` and `Project`. A `Project` stores `messages` (JSON string) and `data` (serialized VFS JSON string). Anonymous users have no `userId` on their project. The Prisma client is generated to `src/generated/prisma/`. Refer to `prisma/schema.prisma` for the authoritative database schema whenever working with persisted data.
 
 ### Preview Rendering
 
